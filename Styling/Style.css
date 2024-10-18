@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Playpen+Sans:wght@400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Playpen Sans', sans-serif;
+    background: radial-gradient(circle, rgb(63, 63, 63), #292929);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+input, button {
+    font-family: 'Playpen Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(148, 47, 47), black);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+
+main {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+
+.Item-Judul span {
+    color: skyblue;
+}
+
+
+.item > .Inner h2  {
+    margin-bottom: unset;
+}
+
+
+.item > .Inner h2  {
+    margin-top: 5px;
+}
+
+
+.input_section, .search_section, .book_shelf_not_done,
+.book_shelf_done {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: rgb(224, 235, 255);;
+}
+
+
+.search_section, .book_shelf_not_done,
+.book_shelf_done {
+    margin: 16px 0;
+}
+
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(224, 235, 255);
+}
+
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(148, 47, 47);
+    color: white;
+    font-size: 12px;
+    padding: 0.5rem 1.rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    width: 20%;
+}
+
+
+.search_section > form > button {
+    background-color: rgb(148, 47, 47);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.input_section > form > button:hover,
+.search_section > form > button:hover {
+    background-color: #2b2929;
+}
+
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.input_section > form > .input_inline > label {
+    color: rgb(224, 235, 255);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.input input:not(:focus),
+.search_section input:not(:focus){
+    border: 2px solid rgb(148, 47, 47);
+    color: grey;
+}
+
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.item {
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+
+.check-button {
+    background-color: lightskyblue;
+}
+
+
+.undo-button {
+    background-color: lightgreen;
+    margin-right: 5px;
+}
+
+
+.trash-button {
+    background-color: rgb(219, 47, 47);
+    margin-left: 5px;
+}
+
+
+.check-button, .undo-button, .trash-button {
+    border-radius: 0.5rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.check-button:hover,
+.undo-button:hover,
+.trash-button:hover {
+    color: white;
+    background-color: #2b2929;
+}
